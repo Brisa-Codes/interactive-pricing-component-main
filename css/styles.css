@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(0, 0%, 100%);
+    font-family: 'Manrope', sans-serif;
+    background-image: url('/images/bg-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+:root {
+    --soft-cyan: hsl(174, 77%, 80%);
+    --strong-cyan: hsl(174, 86%, 45%);
+    --light-greyish-red: hsl(14, 92%, 95%);
+    --light-red: hsl(15, 100%, 70%);
+    --pale-blue: hsl(226, 100%, 87%);
+    --light-blue: hsl(225, 20%, 60%);
+    --dark-blue: hsl(227, 35%, 25%);
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.container-wrapper .card__title h2 {
+    color: var(--dark-blue);
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.container-wrapper .card__title p {
+    text-align: center;
+    color: var(--light-blue);
+    font-size: 16px;
+}
+
+.container-wrapper .card__image {
+    position: absolute;
+    margin-top: 5%;
+    margin: auto;
+    z-index: -1;
+}
+
+.container-wrapper .card__image img {
+    height: 120px;
+}
